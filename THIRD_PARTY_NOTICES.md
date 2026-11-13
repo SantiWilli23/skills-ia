@@ -45,7 +45,7 @@ Las referencias de `skills/diseno-web/` están escritas en español con palabras
 | https://github.com/coreyhaines31/marketingskills | 1f837447b20bb6f0e72d87b80ece1c221c362c7d | references/02 | © 2025 Corey Haines | MIT |
 | https://github.com/emilkowalski/skill | 0f2e23b32bb1265e84cff8d3e75785fec953fb1b | references/08 | © 2026 Emil Kowalski | MIT |
 | https://github.com/shadcn-ui/ui | e62c9435fff729a175f38983dee73b2cb4f6a069 | references/05 | © 2023 shadcn | MIT |
-| https://github.com/pbakaus/impeccable | c4cd1924c389f68d37c687d9c2bbf13f12547c41 | references/07 | Paul Bakaus y colaboradores | Apache-2.0 |
+| https://github.com/pbakaus/impeccable | c4cd1924c389f68d37c687d9c2bbf13f12547c41 | references/07 | (su LICENSE no incluye línea de copyright; autor del repo: pbakaus) | Apache-2.0 |
 
 ### Licencia MIT (fuentes marcadas MIT)
 
