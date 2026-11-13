@@ -10,7 +10,7 @@ const ROOT = path.resolve(__dirname, '..');
 const check = process.argv.includes('--check');
 
 // Skills que van siempre activas en AGENTS.md y en el prompt corto; el resto se invoca por comando.
-const ALWAYS_ON = ['sin-conformismo', 'minimo-necesario', 'plan-primero', 'estado-proyecto', 'resumen-continuo'];
+const ALWAYS_ON = ['sin-conformismo', 'minimo-necesario', 'plan-primero', 'estado-proyecto', 'resumen-continuo', 'aprender-tema'];
 const GROQ_FULL = ['sin-conformismo', 'minimo-necesario', 'plan-primero'];
 const LIMITS = { chatgpt_field: 1500, groq_tokens: 2000, gemini_app: 8000, agents: 12000 };
 const estTokens = (s) => Math.ceil(s.length / 3); // estimación prudente para español

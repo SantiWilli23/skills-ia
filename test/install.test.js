@@ -29,6 +29,7 @@ ok(/^node "[A-Za-z]:\/|^node "\//.test(cmds('Stop')[1]) && !cmds('Stop')[1].incl
 const md = fs.readFileSync(env.CLAUDE_MD_PATH, 'utf8');
 ok((md.match(/## Sin conformismo/g) || []).length === 1 && !md.includes('texto viejo') && md.includes('## Otra cosa') && md.includes('skills-ia:estado-proyecto'), 'CLAUDE.md: reemplaza sin duplicar y añade estado-proyecto');
 ok(fs.existsSync(path.join(home, 'skills', 'estado-proyecto', 'SKILL.md')), 'enlace a las skills funciona');
+ok(md.includes('skills-ia:aprender-tema') && fs.existsSync(path.join(home, 'skills', 'aprender-tema', 'SKILL.md')) && fs.existsSync(path.join(home, 'skills', 'diseno-web', 'SKILL.md')), 'instala aprender-tema (bloque) y diseno-web');
 ok(fs.readdirSync(home).some((f) => f.startsWith('settings.json.bak-')), 'hace backup de settings.json');
 
 r = run('--uninstall');

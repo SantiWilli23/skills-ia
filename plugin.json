@@ -1,7 +1,7 @@
 {
   "name": "skills-ia",
-  "version": "1.0.0",
-  "description": "Skills en español: plan primero, sin conformismo, mínimo necesario, revisión, auditoría, estado del proyecto y más.",
+  "version": "1.1.0",
+  "description": "Skills en español: plan primero, sin conformismo, mínimo necesario, revisión, auditoría, estado del proyecto, aprender un tema con fuentes abiertas, diseño web y más.",
   "author": { "name": "Santiago", "url": "https://github.com/SantiWilli23" },
   "license": "MIT"
 }

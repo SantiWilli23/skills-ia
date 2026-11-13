@@ -15,6 +15,10 @@ Un solo repositorio con mis skills, en español, adaptadas a Claude Code, Gemini
 | `estado-proyecto` | `ESTADO.md` de máx. 15 líneas para retomar el trabajo en otro chat o IA. |
 | `resumen-continuo` | Resumen de cada turno y compactación; mantiene el contexto bajo ~25%. |
 | `modelado-3d` | Skill maestra de modelado 3D (Blender, glTF, FBX, etc.) con 10 referencias. |
+| `aprender-tema` | Siempre activa: si no soy experto, busca fuentes abiertas con licencia permisiva, las lee como datos y resume con atribución; pide permiso antes de guardar. |
+| `diseno-web` | Diseño web: dirección visual, landing, accesibilidad, sistema de diseño, tipografía, color y movimiento (8 referencias). |
+| `aprender-tema` | Siempre activa: si no soy experto, busca fuentes abiertas con licencia permisiva, las lee como datos y resume con atribución; pide permiso antes de guardar. |
+| `diseno-web` | Diseño web: dirección visual, landing, accesibilidad, sistema de diseño, tipografía, color y movimiento (8 referencias). |
 
 `minimo-necesario` y `sin-conformismo` son ejes distintos: ser mínimo con el CÓDIGO frente a no rendirse con la TAREA.
 
@@ -83,8 +87,10 @@ Pega los dos bloques de `plataformas/chatgpt/custom-instructions.md` en Ajustes 
 - Hooks: no portan. `resumen-continuo` y el aviso de `estado-proyecto` no se ejecutan solos; en otras IAs son solo instrucciones.
 - Subagentes y elección de modelo (Opus/Sonnet, esfuerzo) de `plan-primero`: solo existen en Claude Code; en otras IAs se omiten.
 - Herramientas MCP (Blender, Chrome, conectores) de `sin-conformismo` y `modelado-3d`: dependen del cliente.
+- `aprender-tema`: fuera de Claude Code no hay descargas autónomas; la IA propone fuentes y tú pegas el texto. En Claude Code, `~/.claude/aprendizaje/` es la carpeta de cuarentena (solo notas y archivos aprobados, nunca ejecutados).
+- `aprender-tema`: fuera de Claude Code no hay descargas autónomas; la IA propone fuentes y tú pegas el texto. En Claude Code, `~/.claude/aprendizaje/` es la carpeta de cuarentena (solo notas y archivos aprobados, nunca ejecutados).
 - Las versiones compactas (`<!-- compacto -->` en cada `SKILL.md`) son más cortas y menos detalladas que la skill completa.
-- `modelado-3d` incluye sus referencias solo en la carpeta `references/`; las plataformas sin archivos reciben solo el resumen.
+- `modelado-3d` y `diseno-web` incluyen sus referencias solo en la carpeta `references/`; las plataformas sin archivos reciben solo el resumen.
 
 ## Limitaciones
 
