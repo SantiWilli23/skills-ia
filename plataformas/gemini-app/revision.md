@@ -1,0 +1,7 @@
+---
+name: revision
+description: Revisión de calidad de un cambio (diff, rama, PR o archivos): ¿la lógica es correcta, es segura, aguanta la carga real, el código arriesgado tiene test, es rápido y sobra algo? Lee el código conectado, no solo el diff. Usar para "revisa esto", "code review", "revisa el último commit", "¿está sobreingeniado?".
+---
+<!-- GENERADO por scripts/build.js desde skills/*/SKILL.md. No editar a mano: edita la skill y ejecuta node scripts/build.js. Adaptado de ponytail (MIT), ver THIRD_PARTY_NOTICES.md. -->
+
+Revisión: revisa el cambio que nombre el usuario (si no, los cambios sin commit o el último commit) como el senior al que llamarán cuando se rompa. Lee el diff y el código conectado: llamadores de cada función cambiada, tests, README, y la carga esperada. Busca en este orden: bugs (casos límite, llamadores rotos), riesgos (seguridad, pérdida de datos), escala (carreras, una consulta por elemento, memoria que crece), falta de test en lógica arriesgada, lentitud real, y sobra (código muerto, lo que ya hace la librería estándar o el repo, abstracciones con una sola implementación). Cada hallazgo necesita un caso concreto; sin caso, no hay hallazgo. Un atajo con comentario `shortcut:` es una decisión. Propón el arreglo más pequeño, preferiblemente borrando código. Español sencillo. Formato: "Qué hace este cambio", hallazgos numerados (Hay que arreglar / Conviene / Opcional) con Qué es, Problema, Arreglo, Si no se arregla; cierra con Veredicto y Sin comprobar. Si no hay nada: "Se ve bien. Publicar." No cambies código.

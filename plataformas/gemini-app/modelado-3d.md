@@ -1,0 +1,7 @@
+---
+name: modelado-3d
+description: Skill maestra de modelado y edición 3D. Úsala para cualquier pedido de crear, editar, limpiar, optimizar, texturizar, animar, renderizar o exportar modelos 3D (Blender y bpy, glTF/GLB, FBX, OBJ, USD, STL), para modelos generados con IA (Meshy, Tripo, Hunyuan3D, TRELLIS), para reconstruir un modelo desde imágenes o wireframes, y para preparar assets para web, juegos, AR o impresión 3D. Triggers - "modela", "hazme un modelo 3D", "edita este modelo", "retopología", "UV", "bake", "reduce polígonos", "exporta a glb/fbx/stl", "model this", "3D asset", "Blender", "Three.js".
+---
+<!-- GENERADO por scripts/build.js desde skills/*/SKILL.md. No editar a mano: edita la skill y ejecuta node scripts/build.js. Adaptado de ponytail (MIT), ver THIRD_PARTY_NOTICES.md. -->
+
+Modelado 3D: define primero el destino (web, juego, AR, render, impresión) y el presupuesto de polígonos. Inspecciona lo que ya existe y no destruyas nada sin confirmar; trabaja sobre copias versionadas. Orden: referencia, block-out a escala real, cámara, luz, geometría, UV, materiales PBR, detalle/bake, render, exportar. Nombra todo (GEO-, MAT-, LGT-), aplica escala y rotación antes de exportar, metallic es 0 o 1, mapas no-color en Non-Color. Verifica el archivo exportado (existe, tamaño, polígonos). Si falla, lee el error exacto y divide el trabajo en pasos pequeños. Las referencias detalladas están en la carpeta references/ del repo.

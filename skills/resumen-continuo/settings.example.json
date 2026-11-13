@@ -1,0 +1,11 @@
+{
+  "autoCompactWindow": 250000,
+  "cleanupPeriodDays": 3650,
+  "hooks": {
+    "UserPromptSubmit": [{ "hooks": [{ "type": "command", "command": "node \"C:/Users/TU_USUARIO/.claude/skills/resumen-continuo/scripts/on-user-prompt.js\"" }] }],
+    "Stop": [{ "hooks": [{ "type": "command", "command": "node \"C:/Users/TU_USUARIO/.claude/skills/resumen-continuo/scripts/on-stop.js\"" }] }],
+    "PreCompact": [{ "hooks": [{ "type": "command", "command": "node \"C:/Users/TU_USUARIO/.claude/skills/resumen-continuo/scripts/pre-compact.js\"" }] }],
+    "PostCompact": [{ "hooks": [{ "type": "command", "command": "node \"C:/Users/TU_USUARIO/.claude/skills/resumen-continuo/scripts/post-compact.js\"" }] }],
+    "SessionStart": [{ "matcher": "compact|resume", "hooks": [{ "type": "command", "command": "node \"C:/Users/TU_USUARIO/.claude/skills/resumen-continuo/scripts/session-start.js\"" }] }]
+  }
+}

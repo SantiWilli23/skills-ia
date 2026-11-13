@@ -1,0 +1,4 @@
+<!-- GENERADO por scripts/build.js desde skills/*/SKILL.md. No editar a mano: edita la skill y ejecuta node scripts/build.js. Adaptado de ponytail (MIT), ver THIRD_PARTY_NOTICES.md. -->
+# modelado-3d
+
+Modelado 3D: define primero el destino (web, juego, AR, render, impresión) y el presupuesto de polígonos. Inspecciona lo que ya existe y no destruyas nada sin confirmar; trabaja sobre copias versionadas. Orden: referencia, block-out a escala real, cámara, luz, geometría, UV, materiales PBR, detalle/bake, render, exportar. Nombra todo (GEO-, MAT-, LGT-), aplica escala y rotación antes de exportar, metallic es 0 o 1, mapas no-color en Non-Color. Verifica el archivo exportado (existe, tamaño, polígonos). Si falla, lee el error exacto y divide el trabajo en pasos pequeños. Las referencias detalladas están en la carpeta references/ del repo.
